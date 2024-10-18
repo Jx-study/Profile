@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JINXIN Page</title>
+    <style>
+        body {
+            background-image: url('back.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .left {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .right {
+            flex: 4;
+        }
+        img {
+            width: 100%; 
+            border-radius: 50%;
+        }
+        h1, h2, h3 {
+            color: #4B0082;
+        }
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+            color: purple;
+        }
+        a:active {
+            color: red;
+            background-color: yellow;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        strong {
+            text-decoration-line: underline;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        
+        .image {
+            position: relative;
+            justify-content: center;
+            display: flex;
+        }
+        .overlay {
+            height: 15%;
+            width: auto;
+            
+        }
+        .image:hover .text{
+            opacity: 0.5;
+        }
+        .text {
+            background-color: white;
+            border-radius: 10%;
+            color: purple;
+            font-size: 12px;
+            position: absolute;
+            top: 85%;
+            transition:  1s ease;
+            
+            height: 18px;
+            opacity: 0;
+            margin: auto;
+            width: 100px;
+
+            text-align: center;
+            line-height: 18px;
+        }
+
+        table {
+            text-align: center;
+            width: 10px;
+            
+        }
+        tr:nth-child(even) {
+            background-color: #acebeb;
+        }
+        tr:nth-child(odd) {
+            background-color: #D6EEEE;
+        }
+        th {
+            color: black;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Introduction</h1>
+
+    <hr>
+    <div class="container">
+        <div class="left">
+            <div class="image">
+                <img src="images.png" usemap="#workmap" alt="SpongeBob" title="hahaha" style="width: 200px;">
+                <div class="text">I'm SpongeBob</div>
+                <div class="overlay">
+                    
+                    <map name="workmap">
+                        <area shape="rect" coords="53,51,136,179" href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants" alt="SpongeBob">
+                        <area shape="circle" coords="158,67,20" href="https://spongebob.fandom.com/wiki/SpongeBob_SquarePants%27_house" alt="house">
+                    </map>
+                </div>
+            </div>
+            
+            <h3>Name</h3>
+            <p>Sponge bob</p>
+            <h3>Country</h3>
+            <p>Malaysia</p>
+            <h3>Contact Information</h3>
+            <ul>
+                <li><b>Phone Number: </b>096814XXXX</li>
+                <li><b>Gmail:</b> <a href="mailto:jinxintee@gmail.com" title="Go to Gmail section">jinxintee@gmail.com</a></li>
+                <li><b>GitHub:</b> <a href="https://github.com/Jx-study" title="Go to GitHub section">Jx-study</a></li>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <h2>Education</h2>
+            <p>Sophomore, Department of <strong>Computer Science and Information Engineering</strong>, NTUT</p>
+            <h2>Hobbies</h2>
+            <dl>
+                <dt><b>Sport</b></dt>
+                    <dd>- Badminton</dd>
+                    <dd>- Running</dd>
+                <dt><b>Leisure</b></dt>
+                <dd>- Listening to music</dd>
+            </dl>
+            
+            <h1 id="skill">Skills</h1>
+            <hr>
+            <h2>Programming Languages</h2>
+            <ol type="i">
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+            </ol>
+            
+            <h2>Technological Tools</h2>
+            <ul>
+                <li>Git</li>
+            </ul>
+            
+            <br>
+            
+            <h1 id="project">Projects</h1>
+            <hr>
+            <ul>
+                <li>Mousses</li>
+                <li>Pastries</li>
+                <ul>
+                    <li>Croissant</li>
+                    <li>Mille-feuille</li>
+                    <li>Palmier</li>
+                    <li>Profiterole</li>
+                </ul>
+                <li>Tarts</li>
+            </ul>
+            <hr>
+            <table cellpadding="10px">
+
+                <tr >
+                    <th bgcolor="black" style="color: white;">Time</th>
+                    <th scope="col" bgcolor="black"style="color: white;">Mond</th>
+                    <th scope="col"bgcolor="black" style="color: white;">Tue</th>
+                    <th scope="col"bgcolor="black" style="color: white;">Wed</th>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">7:30AM</th>
+                    <td>Breakfast</td>
+                    <td>Breakfast</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <th scope="row">8:00AM</th>
+                    <td rowspan="2" bgcolor="#99FF99">Business: Lecture</td>
+                    <td rowspan="3" bgcolor="#FF9999">Physics: Lab</td>
+                    <td rowspan="2" bgcolor="#99FF99">Business: Lecture</td>
+                </tr>
+                <tr>
+                    <th scope="row">8:30AM</th>
+                </tr>
+                <tr>
+                    <th scope="row">9:00AM</th>
+                    <td rowspan="2" bgcolor="#9933FF">Applied Math</td>
+                    <td rowspan="2" bgcolor="#9933FF">Applied Math</td>
+                </tr>
+                <tr>
+                    <th scope="row">9:30AM</th>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">10:00AM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">10:30AM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">11:00AM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">11:30AM</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                
+                
+            </table>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>
